@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    
+
     @GetMapping("/getSquaredValue/{valueToSquare}")
     long getSquaredValue(@PathVariable("valueToSquare") Long valueToSquare) {
-        return valueToSquare*valueToSquare;
+        return valueToSquare*valueToSquare
     }
 }
